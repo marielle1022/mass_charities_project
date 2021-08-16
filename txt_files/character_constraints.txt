@@ -1,0 +1,16 @@
+Schema constraints on number of characters:
+
+regName 45
+orgName 125
+email	80
+website	145
+description 255
+notes	255
+population 255
+address_name 75
+address_street 45
+address_town 25
+address_zip 5
+phone	12
+langName 45
+serviceType 45

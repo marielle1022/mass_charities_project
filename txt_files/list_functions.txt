@@ -1,0 +1,51 @@
+address.py:
+	input_addresses(cnx, org_name)**
+	view_addresses(cnx, org_name)
+	update_addresses(cnx, org_name)
+	delete_existing(cnx, org_name)**
+	modify_existing(cnx, org_name)**
+	select_existing(cnx, org_name)
+	address_checks(org_name)
+	modify_address_checks(addr_id)
+
+create_obj.py:
+	Class: Create
+		create_full_process(self)
+		create_organization(self)**
+		input_org_name(self)*
+		input_region(self)
+		input_description(self)*
+		input_email(self)*
+		input_website(self)*
+		input_notes(self)*
+		input_population(self)*
+	* = prompting to make either "function from method" or "static method"
+
+organizations.py:
+	check_organization(cnx, org_name)
+	check_address_exists(cnx, org_name, addr_id)
+	prompt_valid_org(cnx)
+
+language.py:
+	create_language(cnx) **
+	add_org_languages(cnx, org_name)**
+	get_existing_languages(cnx)
+	display_existing_languages(cnx)
+	prompt_valid_lang(cnx)
+	check_lang_exists(cnx, lang_name)
+
+
+service.py:
+	create_service(cnx) **
+	add_org_services(cnx, org_name) **
+	get_existing_services(cnx)
+
+
+user_helper.py:
+	create_operation(cnx)
+	update_operation(cnx)
+	search_operation(cnx)
+	choose_search_type(search_options)
+	org_by_name(cnx)
+
+**connection commits
